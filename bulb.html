@@ -1,0 +1,32 @@
+<html>
+<body style="font-family:Calibri;text-align:center;">
+  <style>
+    body{
+      background-image: url(bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+
+
+  <script>
+  function bulb(sw) {
+    var pic;
+    if (sw == 0) {
+      pic = "off.jpg"
+    } else {
+      pic = "on.jpg"
+    }
+    document.getElementById('myImage').src = pic;
+  }
+  </script>
+
+  <img id="myImage" src="off.jpg" width="720" height="576">
+
+  <p>
+  <button type="button" onclick="bulb(1)">LIGHTS ON</button>
+  <button type="button" onclick="bulb(0)">LIGHTS OFF</button>
+  </p>
+
+</body>
+</html>
